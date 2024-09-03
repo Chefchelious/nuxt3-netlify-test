@@ -1,4 +1,11 @@
 import type { ObjectId } from 'mongodb';
+import type { ApiInstance } from '~/plugins/axiosPlugin';
+
+declare module '#app' {
+  interface NuxtApp {
+    $api: ApiInstance;
+  }
+}
 
 export enum ProductStatus {
   Rejected = 'rejected',

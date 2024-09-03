@@ -21,6 +21,7 @@ export default defineNuxtConfig({
       mongoUrl: process.env.MONGO_URL,
       jwtAccessSecret: process.env.JWT_ACCESS_SECRET,
       jwtRefreshSecret: process.env.JWT_REFRESH_SECRET,
+      apiUrl: process.env.API_BASE_URL,
     }
   },
   quasar: {
