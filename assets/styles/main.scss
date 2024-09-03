@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+}
+
+body {
+  line-height: 24px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.q-btn .q-btn__content .block {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.field-36 .q-field__control {
+  padding-left: 16px;
+  padding-right: 16px;
+}
