@@ -43,7 +43,7 @@ export default defineNuxtConfig({
     plugins: ['~/server/plugins/mongoDB.ts']
   },
   routeRules: {
-    '/': { prerender: true },
+    // '/': { prerender: true },
     '/agents': { ssr: false },
     '/*/*': { ssr: false },
   },
