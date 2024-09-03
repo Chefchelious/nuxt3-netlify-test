@@ -25,7 +25,8 @@ export default defineEventHandler(async (event) => {
       return createError({ statusCode: 401, statusMessage: 'Unauthorized' });
     }
 
-    return Agent.find().populate('agentFeedback');
+    // return Agent.find().populate('agentFeedback');
+    return Agent.find();
   } catch (e: unknown) {
     console.error('Ошибка:', e);
     return createError({
