@@ -1,6 +1,5 @@
-import $api from '~/http';
-
 export default defineNuxtRouteMiddleware(async () => {
+  const { $api } = useNuxtApp();
   try {
     await $api.post('/user/check-auth');
   } catch (e: unknown) {
