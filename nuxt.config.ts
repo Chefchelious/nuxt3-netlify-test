@@ -4,11 +4,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: true,
   modules: ['@nuxt/eslint', 'nuxt-quasar-ui', '@pinia/nuxt'],
-  alias: {
-    '@': '/<rootDir>',
-    '@assets': '/<rootDir>/assets',
-    '@images': '/<rootDir>/assets/images',
-  },
   components: [
     {
       path: '~/components',
