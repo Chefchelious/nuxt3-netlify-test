@@ -9,7 +9,7 @@ export default defineNuxtPlugin(nuxtApp => {
 
   const $api = axios.create({
     withCredentials: true,
-    baseURL: config.public.apiUrl, // Use the environment variable here
+    baseURL: config.public.apiUrl,
   });
 
   $api.interceptors.request.use((config) => {
@@ -19,13 +19,19 @@ export default defineNuxtPlugin(nuxtApp => {
 
   $api.interceptors.response.use((response: AxiosResponse) => {
     if (response.status === 401) {
-      window.location.href = '/login';
+      // window.location.href = '/login';
+      if (typeof window !== 'undefined') {
+        window.location.href = '/login';
+      }
     }
     return response;
   }, (error) => {
     const response = error.response;
     if (response && response.status === 401) {
-      window.location.href = '/login';
+      // window.location.href = '/login';
+      if (typeof window !== 'undefined') {
+        window.location.href = '/login';
+      }
     }
     return Promise.reject(error);
   });
