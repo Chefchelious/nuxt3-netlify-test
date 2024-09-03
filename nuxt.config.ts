@@ -4,9 +4,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: true,
   modules: ['@nuxt/eslint', 'nuxt-quasar-ui', '@pinia/nuxt'],
-  css: [
-    '~/assets/styles/main.scss',
-  ],
   alias: {
     '@': '/<rootDir>',
     '@assets': '/<rootDir>/assets',
@@ -41,6 +38,9 @@ export default defineNuxtConfig({
       },
     },
   },
+  css: [
+    '~/assets/styles/main.scss',
+  ],
   nitro: {
     plugins: ['~/server/plugins/mongoDB.ts'],
   },
