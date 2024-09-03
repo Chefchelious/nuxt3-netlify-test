@@ -4,7 +4,13 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: true,
   modules: ['@nuxt/eslint', 'nuxt-quasar-ui', '@pinia/nuxt'],
-  css: ['~/assets/styles/main.scss'],
+  css: [
+    'quasar/animations',
+    'quasar/icons',
+    'quasar/css',
+    'quasar/dist/quasar.css',
+    '~/assets/styles/main.scss'
+  ],
   alias: {
     '@': '/<rootDir>',
     '@assets': '/<rootDir>/assets',
