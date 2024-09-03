@@ -20,7 +20,7 @@ const AgentSchema = new Schema<IAgent>({
   },
   agentFeedback: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'AgentFeedBack',
+    ref: 'AgentFeedback',
     required: false,
   },
   description: {
