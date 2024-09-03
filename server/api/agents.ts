@@ -1,7 +1,6 @@
 import { defineEventHandler } from 'h3';
 import jwt from 'jsonwebtoken';
 import Agent from '~/server/models/agent.model';
-import AgentFeedback from '~/server/models/angentFeedback.model';
 
 const config = useRuntimeConfig();
 
