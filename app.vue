@@ -5,3 +5,7 @@
     </NuxtLayout>
   </div>
 </template>
+
+<script>
+import '~/assets/styles/style.css';
+</script>
