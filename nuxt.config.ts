@@ -5,11 +5,7 @@ export default defineNuxtConfig({
   ssr: true,
   modules: ['@nuxt/eslint', 'nuxt-quasar-ui', '@pinia/nuxt'],
   css: [
-    'quasar/animations',
-    'quasar/icons',
-    'quasar/css',
-    'quasar/dist/quasar.css',
-    '~/assets/styles/main.scss'
+    '~/assets/styles/main.scss',
   ],
   alias: {
     '@': '/<rootDir>',
@@ -28,7 +24,7 @@ export default defineNuxtConfig({
       jwtAccessSecret: process.env.JWT_ACCESS_SECRET,
       jwtRefreshSecret: process.env.JWT_REFRESH_SECRET,
       apiUrl: process.env.API_BASE_URL,
-    }
+    },
   },
   quasar: {
     cssAddon: true,
@@ -46,7 +42,7 @@ export default defineNuxtConfig({
     },
   },
   nitro: {
-    plugins: ['~/server/plugins/mongoDB.ts']
+    plugins: ['~/server/plugins/mongoDB.ts'],
   },
   routeRules: {
     // '/': { prerender: true },
