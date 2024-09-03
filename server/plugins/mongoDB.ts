@@ -1,4 +1,5 @@
 import mongoose from 'mongoose'
+import '~/server/models/angentFeedback.model';
 
 const config = useRuntimeConfig();
 

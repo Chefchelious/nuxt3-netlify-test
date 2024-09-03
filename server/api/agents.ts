@@ -1,6 +1,7 @@
 import { defineEventHandler } from 'h3';
 import jwt from 'jsonwebtoken';
 import Agent from '~/server/models/agent.model';
+import AgentFeedback from '~/server/models/angentFeedback.model';
 
 const config = useRuntimeConfig();
 
@@ -25,7 +26,6 @@ export default defineEventHandler(async (event) => {
       return createError({ statusCode: 401, statusMessage: 'Unauthorized' });
     }
 
-    // return Agent.find().populate('agentFeedback');
     return Agent.find().populate('agentFeedback');
   } catch (e: unknown) {
     console.error('Ошибка:', e);

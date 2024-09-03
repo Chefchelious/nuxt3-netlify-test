@@ -1,7 +1,7 @@
 import axios, { type AxiosResponse } from 'axios';
 
-// export const API_URL = 'http://localhost:3000/api';
-export const API_URL = 'https://nuxt3-netlify-test.netlify.app//api';
+export const API_URL = 'http://localhost:3000/api';
+// export const API_URL = 'https://nuxt3-netlify-test.netlify.app//api';
 
 const $api = axios.create({
   withCredentials: true,
