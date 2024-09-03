@@ -1,4 +1,4 @@
-import { Schema, model } from 'mongoose';
+import mongoose, { Schema, model } from 'mongoose';
 import type { IAgentFeedback } from '~/types';
 
 const AgentFeedbackSchema = new Schema<IAgentFeedback>({
@@ -12,6 +12,6 @@ const AgentFeedbackSchema = new Schema<IAgentFeedback>({
   },
 })
 
-const AgentFeedback = model<IAgentFeedback>('AgentFeedback', AgentFeedbackSchema);
+const AgentFeedback = mongoose.model<IAgentFeedback>('AgentFeedback', AgentFeedbackSchema);
 
 export default AgentFeedback;
