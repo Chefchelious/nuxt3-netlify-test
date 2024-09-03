@@ -1,6 +1,7 @@
 import { defineEventHandler } from 'h3';
 import jwt from 'jsonwebtoken';
 import Agent from '~/server/models/agent.model';
+import AgentFeedback from '~/server/models/angentFeedback.model';
 
 const config = useRuntimeConfig();
 
@@ -26,7 +27,7 @@ export default defineEventHandler(async (event) => {
     }
 
     // return Agent.find().populate('agentFeedback');
-    return Agent.find().populate('agentFeedback');
+    return Agent.find().populate({ path: 'agentFeedback', model: AgentFeedback });
   } catch (e: unknown) {
     console.error('Ошибка:', e);
     return createError({
