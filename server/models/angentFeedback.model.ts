@@ -12,6 +12,6 @@ const AgentFeedbackSchema = new Schema<IAgentFeedback>({
   },
 })
 
-const AgentFeedback = model<IAgentFeedback>('AgentFeedBack', AgentFeedbackSchema);
+const AgentFeedback = model<IAgentFeedback>('AgentFeedback', AgentFeedbackSchema);
 
 export default AgentFeedback;
