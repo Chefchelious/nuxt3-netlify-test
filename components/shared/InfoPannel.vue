@@ -180,7 +180,7 @@ const isActiveTab = (tabRoute: string) => {
   align-items: stretch;
 }
 
-.tab {
+:deep(.tab) {
   border-radius: 12px;
   background-color: #e8e8e8;
   padding: 8px 12px;
