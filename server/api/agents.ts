@@ -26,7 +26,7 @@ export default defineEventHandler(async (event) => {
     }
 
     // return Agent.find().populate('agentFeedback');
-    return Agent.find();
+    return Agent.find().populate('agentFeedback');
   } catch (e: unknown) {
     console.error('Ошибка:', e);
     return createError({

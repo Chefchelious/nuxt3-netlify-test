@@ -1,5 +1,6 @@
 import mongoose, { Schema, model } from 'mongoose';
 import type { IAgent } from '~/types';
+import '~/server/models/angentFeedback.model';
 
 const AgentSchema = new Schema<IAgent>({
   name: {
