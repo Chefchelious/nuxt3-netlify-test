@@ -33,8 +33,11 @@ export default defineNuxtConfig({
       },
     },
   },
+  // css: [
+  //   '~/assets/styles/main.scss',
+  // ],
   css: [
-    '~/assets/styles/main.scss',
+    '~/assets/styles/style.css',
   ],
   nitro: {
     plugins: ['~/server/plugins/mongoDB.ts'],
